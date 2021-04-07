@@ -1,8 +1,8 @@
 <?php
-$host="localhost";
-$db_name="php_beginner";
-$username="root";
-$password="";
+$host="lyn7gfxo996yjjco.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306";
+$db_name="ngdwfln1lelgs57z";
+$username="xzvyv581cnwz1gos";
+$password="s29pct7acdhufn40";
 try{
 	$con=new PDO("mysql:host={$host};dbname={$db_name}",$username,$password);
 }
