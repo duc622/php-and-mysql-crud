@@ -59,7 +59,7 @@ include 'header-footer/header.php';
         $permitted_chars = '0123456789abcdefghijklmnopqrstuvwxyz';
         $image = !empty($_FILES['image']['name'])
           ? str_shuffle($permitted_chars)  . '-' . basename($_FILES['image']['name'])
-          : '';
+          : $image;
         $image = htmlspecialchars(strip_tags($image));
         // bind the parameters
         $stmt->bindParam(':name', $name);
